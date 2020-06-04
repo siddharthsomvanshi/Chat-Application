@@ -1,0 +1,174 @@
+/* scroll bar customization */
+
+
+::-webkit-scrollbar {width:8px;}
+::-webkit-scrollbar-track {
+-webkit-border-radius:50px;
+border-radius:50px;
+}
+::-webkit-scrollbar-thumb{
+-webkit-border-radius:50px;
+border-radius:50px;
+background:grey;
+}
+::-webkit-scrollbar-thumb:window-inactive{
+background: grey;
+}
+
+/* scroll customization ends */
+
+
+.upperbox{
+    top:0px;
+	position:fixed;
+	left:0px;
+	width:100%;
+    height: 60px;
+    background-color:black;
+    z-index:18;
+	overflow:hidden;
+	}
+.bottombox{
+    bottom:0px;
+	position:fixed;
+	left:0px;
+	width:100%;
+    height: 30px;
+    background-color:black;
+    z-index:10;
+	opacity:1;
+	overflow:hidden;
+	}
+
+	.topnav {
+    left:0px;
+	top:60px;
+	position:fixed;
+	background-color: black;
+    clear: both;
+    width: 90px;
+    height: 100%;
+	z-index:9;
+}
+.menulink a:link, a:visited {
+    font-family:comic sans ms;
+	background-color: #00ffa1;
+    color: white;
+    padding: 20px 5px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+	width:100%;
+	z-index:9;
+}
+
+.menulink a:hover, a:active {
+    background-color: #7a00ff;
+	z-index:9;
+}
+.info {
+position:absolute;
+font-family:"Letter Gothic Std",calibri;
+font-size:25px;
+width:50%;
+top:50px;
+left:20px;
+color:white;
+}
+#ustatus{
+color:white;
+font-family:"Letter Gothic Std",calibri;
+background-color:black;
+font-size:25px;
+opacity:0.9;
+right:0px;
+height:100%;
+width:220px;
+overflow:scroll;
+top:100px;
+position:fixed;
+z-index:40;
+text-decoration:none;
+}
+#info{
+color:white;
+font-family:"Letter Gothic Std",calibri;
+font-size:20px;
+right:20px;
+height:60px;
+width:270px;
+overflow:hidden;
+top:10px;
+position:fixed;
+z-index:550;
+}
+body {
+background:url(../files/background.jpg)center center fixed;
+width:90%;
+height:100%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.collapse a:link, a:visited {
+	font-family:"Letter Gothic Std",calibri;
+	background-color: green;
+    color: white;
+    padding: 20px 5px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+	width:100%;
+	z-index:9;
+}
+
+.collapse a:hover, a:active {
+    background-color: red;
+	z-index:9;
+}
+#msgloader{
+    bottom:40px;
+	position:fixed;
+	right:250px;
+	width:250px;
+    height:279px;
+    background-color:white;
+    z-index:18;
+	overflow:auto;
+	}
+#msgdisplay {
+overflow:hidden; 
+border-color:black; 
+-webkit-border-radius: 25px 25px 25px 25px; 
+-moz-border-radius: 25px 25px 25px 25px; 
+border-radius: 0px 25px 25px 0px; 
+background-color:blue;
+font-weight:none;
+font-size:15px;
+color:white;
+font-family:"Letter Gothic Std",calibri;
+}
+.circularimg{
+background-repeat:no-repeat;
+background-position:50%;
+background-size:40px 40px;
+border-radius:50%;
+width:40px;
+height:40px;
+z-index:500;
+}
+#info .circularimg {
+float:right;
+}
+#info .circulartext{
+float:right;
+text-decoration:none;
+color:white;
+}
+#ustatus .circularimg {
+float:left;
+}
+#ustatus .circulartext{
+float:left;
+text-decoration:none;
+color:white;
+}
